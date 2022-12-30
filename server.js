@@ -3,9 +3,9 @@ const app = express();
 const PORT = 8080;
 const routes = require('./routes/routes')
 
-app.use('/', routes);
+app.use('/news', routes);
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome to Indian Latest News API')
 })
 
