@@ -3,7 +3,7 @@ const axios = require('axios');
 const route = express.Router();
 const Data = require('./functions');
 const newsLetters = require('./newsLetterData');
-const cache = require('memory-cache');
+
 
 route.get('/', async (req, res) => {
 
